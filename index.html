@@ -7,12 +7,23 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
         <!-- Bootstrap CDN -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
         <!-- Other CSS -->
         <link href="homepage.css" rel="stylesheet">
 
         <title>David Gibson</title>
+
+        <!-- Just testing that Bootstrap actually worked out -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var bootstrap = (typeof $().modal == 'function');
+                console.log(bootstrap);
+            });
+        </script>
+
     </head>
     <body>
 
@@ -38,11 +49,11 @@
         </nav>
 
         <!-- About Section -->
-        <div id="About" class="container-shift">
+        <div id="About" class="container shift">
             <div class="page-header">
                 <h2>So Who Am I?</h2>
             </div>
-            <p>A huge <a href="http://www.gregegan.net/" id="egan"><b>Greg Egan</b></a> fan. A Vim user, aspiring developer with some (the amount's growing every day!) experience with web and application programming. A (pretty terrible) player of <a href="https://en.wikipedia.org/wiki/Diplomacy_(game)" id="diplomacy"><b>Diplomacy</b></a> with delusions of grandeur.</p>
+            <p>A huge <a href="http://www.gregegan.net/" id="egan" target="_blank"><b>Greg Egan</b></a> fan. A Vim user, aspiring developer with some (the amount's growing every day!) experience with web and application programming. A (pretty terrible) player of <a href="https://en.wikipedia.org/wiki/Diplomacy_(game)" id="diplomacy" target="_blank"><b>Diplomacy</b></a> with delusions of grandeur.</p>
         </div>
 
         <!-- My Portfolio -->
@@ -95,7 +106,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="top-buffer">
+        <footer class="top-buffer container">
             <p>Created by David Gibson</p>
             <p>Look me up on <a href="https://github.com/dgibson314">Github</a></p>
         </footer>
