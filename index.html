@@ -1,1 +1,105 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <!-- JQuery minified 3.2.1 CDN -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Other CSS -->
+        <link href="homepage.css" rel="stylesheet">
+
+        <title>David Gibson</title>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">David Gibson</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#About">About</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <div id="About" class="container-shift">
+            <div class="page-header">
+                <h2>So Who Am I?</h2>
+            </div>
+            <p>A huge <a href="http://www.gregegan.net/" id="egan"><b>Greg Egan</b></a> fan. A Vim user, aspiring developer with some (the amount's growing every day!) experience with web and application programming. A (pretty terrible) player of <a href="https://en.wikipedia.org/wiki/Diplomacy_(game)" id="diplomacy"><b>Diplomacy</b></a> with delusions of grandeur.</p>
+        </div>
+
+        <!-- My Portfolio -->
+        <div id="Portfolio" class="container shift">
+            <div class="page-header">
+                <h2>So What Have I Made?</h2>
+                <p>Not much, but this'll soon be updated...</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737__340.jpg" class="img-thumbnail" alt="social-media">
+			    </div>
+			    <div class="col-sm-6">
+				    <img src="https://cdn.pixabay.com/photo/2016/12/01/18/17/mobile-phone-1875813__340.jpg" class="img-thumbnail" alt="mobile">
+			    </div>
+            </div>
+            <div class="row top-buffer">
+                <div class="col-sm-6">
+                    <img src="https://www.topechelon.com/wp-content/uploads/2016/07/devices-web-design.png" class="img-thumbnail" alt="random">
+                </div>
+                <div class="col-sm-6">
+                    <img src="http://pad3.whstatic.com/images/thumb/b/bb/Find-the-Font-Used-in-a-Website-Step-1.jpg/aid4369487-728px-Find-the-Font-Used-in-a-Website-Step-1.jpg" class="img-thumbnail" alt="google">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div id="Contact" class="container shift">
+            <div class="page-header">
+                <h2>Want To Know More?</h2>
+                <p>Note: doesn't actually work yet, so...</p>
+            </div>
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for"Message">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="top-buffer">
+            <p>Created by David Gibson</p>
+            <p>Look me up on <a href="https://github.com/dgibson314">Github</a></p>
+        </footer>
+    </body>
+</html>
+
+
