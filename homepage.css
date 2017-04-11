@@ -1,5 +1,6 @@
 body {
     background-image:url("https://news.nationalgeographic.com/content/dam/news/2016/03/09/solareclipse/02solareclipse2016.jpg");
+    background-color: black;
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 100%;
